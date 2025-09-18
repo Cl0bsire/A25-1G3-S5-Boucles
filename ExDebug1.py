@@ -54,6 +54,7 @@ if __name__ == "__main__":
     while True:
         try:
             temp = float(input("Entrez la température: "))
+            liste_temp.append(temp)
             break
         except:
             print("Température invalide!")
