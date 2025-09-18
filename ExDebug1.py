@@ -48,6 +48,7 @@ if __name__ == "__main__":
     liste_temp = []
     liste_poussiere = []
     liste_humidite = []
+
     #TODO: Pour 3 ordinateurs
         #TODO: Demander temp, poussiere, humidite
         #TODO: Mettre les 3 valeurs dans leurs liste
