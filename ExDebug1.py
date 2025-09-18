@@ -42,6 +42,7 @@ def environnement_optimal(temp, poussiere, humidite):
         return "Environnement non optimal"
 
 
+# Input
 if __name__ == "__main__":
     temp = float(input("Entrez la température: "))
     poussiere= input("Entrez le niveau de poussière: ")
