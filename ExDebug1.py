@@ -59,7 +59,9 @@ if __name__ == "__main__":
             break
         except:
             print("Température invalide!")
+
     poussiere= input("Entrez le niveau de poussière: ")
+
     humidite = float(input("Entrez l'humidité: "))
     #TODO: Pour les 3 ordinateurs
         #TODO: utiliser la fonction et afficher le résultat
