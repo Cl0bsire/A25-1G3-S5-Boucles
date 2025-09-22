@@ -52,6 +52,10 @@ if __name__ == "__main__":
     #TODO: Pour 3 ordinateurs
         #TODO: Demander temp, poussiere, humidite
         #TODO: Mettre les 3 valeurs dans leurs liste
+for i in range(3):
+    print("="*30)
+    print(f"Ordinateur {i+1}")
+
     while True:
         try:
             temp = float(input("Entrez la température: "))
@@ -60,10 +64,23 @@ if __name__ == "__main__":
         except:
             print("Température invalide!")
 
-    poussiere= input("Entrez le niveau de poussière: ")
+    poussiere = input("Entrez le niveau de poussière (faible, moyen, élevé): ")
+    liste_poussiere.append(poussiere)
 
-    humidite = float(input("Entrez l'humidité: "))
+    while True:
+        try:
+            humidite = float(input("Entrez l'humidité: "))
+            liste_humidite.append(humidite)
+            break
+        except:
+            print("Humidité invalide!")
     #TODO: Pour les 3 ordinateurs
         #TODO: utiliser la fonction et afficher le résultat
 
-    print(environnement_optimal(temp, poussiere, humidite))
+
+print("="*30)
+print("Ordinateur 1 :")
+print(environnement_optimal(liste_temp[0], liste_poussiere[0], liste_humidite[0]))
+"""print(f"Ordinateur 2 : {environnement_optimal(liste_temp[1], liste_poussiere[1], liste_humidite[1])}")
+print(f"Ordinateur 3 : {environnement_optimal(liste_temp[2], liste_poussiere[2], liste_humidite[2])}")"""
+
